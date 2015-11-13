@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "CFSudokuGame",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"xpos",
+		"ypos"
+	],
+	"name" : "SudokuCell",
+	"type" : "normal"
+}
