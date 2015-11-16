@@ -1,6 +1,8 @@
 initialization
 initStandardMaxX: maxX maxY: maxY
-	boxes := OrderedCollection new.
+	
+	self reset.
+	
 	1 to: 9 do:
 		[ :index | 
 		boxes

@@ -1,0 +1,4 @@
+accessing
+solvedCells
+
+	^Dictionary new

@@ -1,0 +1,4 @@
+accessing
+board
+
+	^game board

@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"boxes",
-		"maxX",
-		"maxY"
-	],
-	"name" : "SudokuBoard",
+	"instvars" : [ ],
+	"name" : "SudokuGameBase",
 	"type" : "normal"
 }

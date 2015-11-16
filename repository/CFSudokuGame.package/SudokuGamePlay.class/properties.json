@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SudokuGameBase",
 	"category" : "CFSudokuGame",
 	"classinstvars" : [ ],
 	"pools" : [ ],
