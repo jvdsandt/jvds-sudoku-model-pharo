@@ -14,9 +14,13 @@ doNextMove
 				cell := eachCell.
 				values := eachValues ] ].
 		
-	^values size = 1
-		ifTrue: [ 
-			SudokuGamePlay newFrom: self withMove: cell -> values first ]
-		ifFalse: [ 
-			self halt.
-			SudokuGamePlay newFrom: self withMove: cell -> values first ]
+	values size = 1
+		ifTrue: [ ^SudokuGamePlay newFrom: self withMove: cell -> values first ].
+		
+	self boxes do: [ :eachBox |
+		(eachBox findMoveWith: openCellsWithValues)
+			ifNotNil: [ :cellWithValue |
+				^SudokuGamePlay newFrom: self withMove: cellWithValue ] ].
+				
+	self halt.
+	SudokuGamePlay newFrom: self withMove: cell -> values first
