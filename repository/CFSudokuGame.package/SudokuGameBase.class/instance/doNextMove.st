@@ -3,9 +3,9 @@ doNextMove
 
 	| openCellsWithValues cell values |
 	
-	openCellsWithValues := self findOpenCellValuesIfEmpty: [ self error: 'InvalidGame' ].
+	openCellsWithValues := self findOpenCellValuesIfEmpty: [ ^self goBackAndMove ].
 	openCellsWithValues isEmpty
-		ifTrue: [ self error: '' ].
+		ifTrue: [ ^self goBackAndMove ].
 		
 	values := nil.
 	openCellsWithValues keysAndValuesDo: [ :eachCell :eachValues |
@@ -15,12 +15,11 @@ doNextMove
 				values := eachValues ] ].
 		
 	values size = 1
-		ifTrue: [ ^SudokuGamePlay newFrom: self withMove: cell -> values first ].
+		ifTrue: [ ^self newMove: cell -> values first ].
 		
 	self boxes do: [ :eachBox |
 		(eachBox findMoveWith: openCellsWithValues)
 			ifNotNil: [ :cellWithValue |
-				^SudokuGamePlay newFrom: self withMove: cellWithValue ] ].
+				^self newMove: cellWithValue ] ].
 				
-	self halt.
-	SudokuGamePlay newFrom: self withMove: cell -> values first
+	^self newGuessMove: (self takeGuessFrom: openCellsWithValues)

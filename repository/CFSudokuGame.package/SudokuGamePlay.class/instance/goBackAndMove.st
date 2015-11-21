@@ -1,0 +1,4 @@
+actions
+goBackAndMove
+
+	^previousPlay goBackAndMove

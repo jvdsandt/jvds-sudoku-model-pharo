@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"invalidCells"
+	],
 	"name" : "SudokuGameBase",
 	"type" : "normal"
 }

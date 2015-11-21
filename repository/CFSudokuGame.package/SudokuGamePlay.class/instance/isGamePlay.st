@@ -1,0 +1,4 @@
+testing
+isGamePlay
+
+	^true

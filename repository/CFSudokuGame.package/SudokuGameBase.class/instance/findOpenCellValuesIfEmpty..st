@@ -15,5 +15,9 @@ findOpenCellValuesIfEmpty: emptyBlock
 			possibleValues isEmpty
 				ifTrue: [ ^emptyBlock value ].
 			cellOptions at: eachOpenCell put: possibleValues ] ].
+	
+	invalidCells do: [ :eachCellWithValue |
+		cellOptions at: eachCellWithValue key ifPresent: [ :values |
+			cellOptions at: eachCellWithValue key put: (values copyWithout: eachCellWithValue value) ] ].
 		
 	^cellOptions

@@ -1,7 +1,7 @@
-tests
-testGamePlay
+as yet unclassified
+benchHard
 
-	| game  |
+	| game |
 	
 	game := SudokuGame newFromArray: #(
 		#(1 0 0 0 0 7 0 9 0)
@@ -13,6 +13,6 @@ testGamePlay
 		#(3 0 0 0 0 0 0 1 0)
 		#(0 4 0 0 0 0 0 0 7)
 		#(0 0 7 0 0 0 3 0 0)).
+		
+	[ game asSolvedGame ] bench
 	
-	[ game isSolved ]
-		whileFalse: [ game := game doNextMove ].
