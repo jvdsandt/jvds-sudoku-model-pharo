@@ -1,0 +1,4 @@
+accessing
+numberOfCellsToSolve
+
+	^numberOfCellsToSolve

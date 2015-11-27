@@ -3,4 +3,5 @@ initializeWith: aBoard and: aFixedCells
 
 	board := aBoard.
 	fixedCells := aFixedCells.
-	invalidCells := #()
+	invalidCells := #().
+	numberOfCellsToSolve := aBoard relevantCells size - fixedCells size.

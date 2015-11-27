@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"board",
-		"fixedCells"
+		"fixedCells",
+		"numberOfCellsToSolve"
 	],
 	"name" : "SudokuGame",
 	"type" : "normal"

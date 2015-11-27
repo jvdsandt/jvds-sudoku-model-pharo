@@ -1,5 +1,4 @@
 testing
 isSolved
 
-	^self board relevantCells allSatisfy: [ :each | self isKnown: each ]
-		
+	^self numberOfCellsToSolve = 0		
