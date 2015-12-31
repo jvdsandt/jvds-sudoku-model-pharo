@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 fixWithArray: anArrayOfArrays
 
 	anArrayOfArrays doWithIndex: [ :eachRow :ypos |
