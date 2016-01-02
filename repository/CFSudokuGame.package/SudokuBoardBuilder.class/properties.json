@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board",
-		"boxes",
-		"fixedCells"
+		"boxes"
 	],
-	"name" : "SudokuGameBuilder",
+	"name" : "SudokuBoardBuilder",
 	"type" : "normal"
 }

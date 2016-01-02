@@ -1,4 +1,4 @@
 actions
 newGame
 
-	^SudokuGame newWith: self newBoard and: fixedCells copy
+	^SudokuGame newWith: self board and: fixedCells copy

@@ -1,4 +1,4 @@
 testing
 canAdd: aPointValueAssoc
 
-	^boxes allSatisfy: [ :each | each canAdd: aPointValueAssoc to: fixedCells ]
+	^self board boxes allSatisfy: [ :each | each canAdd: aPointValueAssoc to: fixedCells ]
