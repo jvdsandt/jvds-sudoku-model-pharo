@@ -5,7 +5,7 @@ findMoveWith: openCellsWithValues
 	
 	cellsPerValue := Dictionary new.
 
-	self cells do: [ :eachCell |
+	self cellsDo: [ :eachCell |
 		openCellsWithValues at: eachCell ifPresent: [ :values |
 			values do: [ :eachValue |
 				(cellsPerValue at: eachValue ifAbsentPut: [ OrderedCollection new ]) add: eachCell ] ] ].
