@@ -19,3 +19,8 @@ testCreateGameFromArray
 	self assert: (game valueAt: 1@1 ifUnknown: [ #empty ]) equals: 1.
 	self assert: (game valueAt: 7@9 ifUnknown: [ #empty ]) equals: 3.
 	self assert: (game valueAt: 5@3 ifUnknown: [ #empty ]) equals: #empty.
+	
+	self assert: (game canAdd: 2@1 -> 2).
+	self assert: (game canAdd: 2@1 -> 4) not.
+	self assert: (game canAdd: 3@9 -> 7) not.
+
