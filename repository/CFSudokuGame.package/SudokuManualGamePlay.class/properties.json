@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SudokuGameGuessedPlay",
+	"name" : "SudokuManualGamePlay",
 	"type" : "normal"
 }

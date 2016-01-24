@@ -1,4 +1,4 @@
-actions
+actions-internal
 takeGuessFrom: openCellsWithValues
 
 	| cell values |

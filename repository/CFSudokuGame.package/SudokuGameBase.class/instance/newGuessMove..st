@@ -1,4 +1,4 @@
-actions
+actions-internal
 newGuessMove: aCellWithValue
 
-	^SudokuGameGuessedPlay newFrom: self withMove: aCellWithValue withInvalid: invalidCells 
+	^SudokuAutoGameGuessedPlay newFrom: self withMove: aCellWithValue withInvalid: invalidCells 

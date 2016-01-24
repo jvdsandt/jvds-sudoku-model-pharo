@@ -1,4 +1,4 @@
-actions
+actions-internal
 newMove: aCellWithValue
 
-	^SudokuGamePlay newFrom: self withMove: aCellWithValue withInvalid: invalidCells 
+	^SudokuAutoGamePlay newFrom: self withMove: aCellWithValue withInvalid: invalidCells 
