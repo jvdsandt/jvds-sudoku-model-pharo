@@ -1,14 +1,14 @@
 {
-	"commentStamp" : "JanVanDeSandt 8/26/2016 10:52",
-	"super" : "Object",
+	"commentStamp" : "",
+	"super" : "SudokuGamePlay",
 	"category" : "CFSudokuGame",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board",
-		"fixedCells"
+		"optionsPerCell",
+		"guessed"
 	],
-	"name" : "SudokuGameBuilder",
+	"name" : "SudokuGamePlay2",
 	"type" : "normal"
 }

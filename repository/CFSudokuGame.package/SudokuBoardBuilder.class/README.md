@@ -1,0 +1,1 @@
+Builder class for creating SudokuBoard instances.
