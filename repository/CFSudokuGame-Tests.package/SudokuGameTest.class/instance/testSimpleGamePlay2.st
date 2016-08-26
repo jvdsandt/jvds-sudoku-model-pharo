@@ -1,9 +1,10 @@
 tests
-testSimpleGamePlay
+testSimpleGamePlay2
 
 	| game stepCount |
 	
 	game := SudokuGames simple9x9Game.
+	game := SudokuGamePlay2 new initializeWithGame: game.
 	
 	stepCount := 0.
 	[ game isSolved ]
