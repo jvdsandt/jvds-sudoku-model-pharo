@@ -4,7 +4,6 @@ testDifficultGamePlay
 	| game stepCount |
 	
 	game := SudokuGames difficult9x9Game.
-	game := SudokuGamePlay2 new initializeWithGame: game.
 	
 	stepCount := 0.
 	[ game isSolved ]
