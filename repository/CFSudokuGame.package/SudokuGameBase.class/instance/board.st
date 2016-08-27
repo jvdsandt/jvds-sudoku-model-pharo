@@ -1,4 +1,4 @@
 accessing
 board
 
-	^game board
+	^self game board

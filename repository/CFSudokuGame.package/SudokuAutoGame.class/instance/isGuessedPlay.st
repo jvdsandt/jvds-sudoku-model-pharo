@@ -1,4 +1,4 @@
 testing
 isGuessedPlay
 
-	^true
+	^guessed

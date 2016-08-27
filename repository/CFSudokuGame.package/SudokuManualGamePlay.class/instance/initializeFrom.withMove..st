@@ -1,5 +1,5 @@
 initialization
-initializeFrom: aGameBase withMove: aCellValueAssoc withInvalid: invalidCellsColl
+initializeFrom: aGameBase withMove: aCellValueAssoc
 
 	game := aGameBase game.
 	previousPlay := aGameBase.
@@ -8,4 +8,3 @@ initializeFrom: aGameBase withMove: aCellValueAssoc withInvalid: invalidCellsCol
 	solvedCells := previousPlay solvedCells copy
 		add: aCellValueAssoc;
 		yourself.
-	invalidCells := invalidCellsColl.

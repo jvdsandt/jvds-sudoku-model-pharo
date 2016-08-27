@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SudokuAutoGamePlay",
+	"super" : "SudokuGamePlay",
 	"category" : "CFSudokuGame",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SudokuAutoGameGuessedPlay",
+	"instvars" : [
+		"guessed"
+	],
+	"name" : "SudokuAutoGame",
 	"type" : "normal"
 }

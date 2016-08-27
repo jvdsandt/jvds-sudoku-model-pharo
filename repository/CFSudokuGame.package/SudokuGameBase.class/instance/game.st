@@ -1,4 +1,4 @@
 accessing
 game
 
-	^self
+	self subclassResponsibility
