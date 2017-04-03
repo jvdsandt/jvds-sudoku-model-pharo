@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newFrom: aGameBase withInvalidMove: aCellValueAssoc ifInvalid: invalidBlock
 
 	| optionsPerCell |
