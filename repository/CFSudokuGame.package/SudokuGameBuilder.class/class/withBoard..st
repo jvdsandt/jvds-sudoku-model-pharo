@@ -1,4 +1,6 @@
 instance creation
 withBoard: aBoard
 
-	^self new initWithBoard: aBoard
+	^self basicNew 
+		initialize ;
+		initWithBoard: aBoard
